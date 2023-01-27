@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .personal-info {
+    width: 250px;
+  }
+  #job-info > .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #certificate > .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .item > h2,
+  p {
+    font-size: 8px !important;
+  }
+  #project > .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} ;

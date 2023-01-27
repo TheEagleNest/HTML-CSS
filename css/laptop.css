@@ -1,0 +1,437 @@
+/*
+      SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /
+      128
+      FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /
+      52 / 62 / 74 / 86 / 98
+      */
+
+/* HEADER */
+header {
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 0.483),
+      rgba(26, 26, 26, 0.483)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+#banner > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 30px;
+}
+#banner > span {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.702);
+}
+/* NAVIGATE BAR */
+
+a {
+  font-family: "et-line", sans-serif;
+  font-size: 8px;
+}
+
+/* PERSONAL PICTURE */
+@media (min-width: 768px) {
+  .info {
+    border: 1px solid rgba(227, 227, 227, 0.306);
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url("/images/Quy.png");
+    background-size: 100px 120px;
+    background-position: center;
+  }
+}
+
+i {
+  font-size: 10px;
+  color: rgba(34, 135, 197, 0.796);
+}
+/* ABOUT */
+
+.bg-grey {
+  background: rgb(247, 247, 247);
+}
+#about {
+  height: 240px;
+}
+#target {
+  width: 300px;
+}
+#personal-info {
+  width: 300px;
+}
+/* ABOUT / TARGET */
+#target > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+}
+#target > p {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* ABOUT /  PERSONAL INFO */
+
+#personal-info > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+}
+#personal-info > ul {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+#personal-info > ul > li {
+  list-style-type: none;
+}
+/* JOB-INFO */
+#job-info > .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Khối flex 1 - Kinh nghịệm & Sở thích */
+/* Kinh nghiệm */
+.exp {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+}
+.exp > i {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.exp > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.exp > ul {
+  line-height: 16px;
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Khối exp - Tiêu đề li */
+.exp-ul > li p:nth-child(1) {
+  font-family: "et-line", sans-serif;
+}
+.exp-ul > li:nth-child(2) {
+  padding-top: 20px;
+}
+.exp-ul li::marker {
+  color: rgb(49, 173, 235);
+  font-size: 15px;
+}
+/* khối nền màu xanh "Hiện tại" */
+.borderexp {
+  background-color: rgb(49, 173, 235);
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 9px;
+  align-items: center;
+}
+/* Sở thích */
+
+.hobbies {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+  padding-bottom: 30px;
+}
+.hobbies > .ic-telescope {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.hobbies > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+}
+#icon {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  width: 205px;
+}
+#icon > i {
+  font-size: 20px;
+  color: rgb(49, 173, 235);
+  border: 1px solid rgb(49, 173, 235);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#text {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 5px;
+
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  width: 196px;
+}
+/* KHỐI flex 2 | HỌC VẤN & NGÔN NGỮ */
+/* HỌC VẤN */
+.education {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+  padding-bottom: 40px;
+}
+.education > i {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.education > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.education > ul {
+  line-height: 16px;
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Khối EDUCATION - Tiêu đề li */
+.education-ul > li p:nth-child(1) {
+  font-family: "et-line", sans-serif;
+}
+.education-ul > li:nth-child(2) {
+  padding-top: 20px;
+}
+.education-ul li::marker {
+  color: rgb(49, 173, 235);
+  font-size: 15px;
+}
+/* NGÔN NGỮ */
+
+.language {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+  padding-bottom: 40px;
+}
+.language > i {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.language > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.language > p {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px 20px;
+}
+/* KHỐI COLORED BAR | NGÔN NGỮ */
+#color-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 110px;
+  margin: 10px 20px;
+}
+#barblue {
+  border: 1px solid rgb(49, 173, 235);
+  width: 30px;
+}
+#bargrey {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+}
+
+/* KHỐI flex 3 | HOẠT ĐỘNG & KỸ NĂNG */
+/* HOẠT ĐỘNG */
+.activities {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+  padding-bottom: 50px;
+}
+.activities > i {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.activities > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.activities > ul {
+  line-height: 16px;
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* Khối activities - Tiêu đề li */
+.activites > li p:nth-child(1) {
+  font-family: "et-line", sans-serif;
+}
+
+#act2 {
+  padding-top: 20px;
+}
+.activities li::marker {
+  color: rgb(49, 173, 235);
+  font-size: 15px;
+}
+/* KỸ NĂNG */
+
+.skill {
+  border: 1px solid rgba(93, 92, 92, 0.104);
+  width: 90%;
+  padding-bottom: 50px;
+}
+.skill > i {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  font-size: 300%;
+  color: rgba(0, 0, 0, 0.547);
+}
+.skill > h1 {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.skill > p {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px 20px;
+}
+/* BLOCK CHỨNG CHỈ - GIẢI THƯỞNG */
+
+.section-title {
+  font-family: "et-line", sans-serif;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+  padding-top: 20px;
+}
+
+.certificate-image {
+  width: 130%;
+}
+
+h2 {
+  font-family: "et-line", sans-serif;
+  font-size: 10px !important;
+  color: rgba(0, 0, 0, 0.644);
+  padding-bottom: 5px;
+}
+.container-cer {
+  column-gap: 20px;
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* CONTAINER "DỰ ÁN" */
+#project {
+  margin-left: 110px;
+  width: 1200px;
+  height: 400px;
+  margin-top: 20px;
+}
+
+/* 3 khối flex theo chiều ngang */
+
+.project-image {
+  width: 250px;
+  margin-top: 20px;
+}
+.flex {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(171, 171, 171, 0.256);
+  width: 10px;
+}
+.flex p:nth-child(1) {
+  background-color: rgb(49, 173, 235);
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 9px;
+}
+.grid {
+  font-family: "et-line", sans-serif;
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(171, 171, 171, 0.256);
+}
+
+#project h2 {
+  border: 1px solid rgba(171, 171, 171, 0.256);
+}
+/* FOOTER */
+#footer ul {
+  list-style-type: none;
+}
+#footer li > i {
+  background-color: rgb(49, 173, 235);
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 50%;
+  width: 10%;
+  height: 10%;
+}
+#footer li > p {
+  font-family: "et-line", sans-serif;
+  font-size: 70%;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* UTILITIES */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

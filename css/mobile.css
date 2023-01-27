@@ -1,0 +1,45 @@
+@media (max-width: 600px) {
+  #nav-bar > .container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .nav-set {
+    justify-content: center;
+  }
+  #about > .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  #personal-info {
+    background-color: rgba(0, 0, 0, 0.198);
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #target {
+    background-color: rgba(0, 0, 0, 0.073);
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #job-info {
+    margin-top: 130px;
+  }
+  #job-info > .container {
+    grid-template-columns: 1fr;
+  }
+  .item > h2,
+  p {
+    font-size: 10px !important;
+    padding-top: 10px;
+  }
+  .certificate-image {
+    width: 100%;
+  }
+  #project > .container {
+    grid-template-columns: 1fr;
+  }
+  #footer > p {
+    padding-top: 10px !important;
+  }
+} ;
